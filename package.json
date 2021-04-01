@@ -6,7 +6,7 @@
   "author": "AlexsandroFGValencio <alexsandro.valencio@cialdnb.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "docker:migration-run": "docker exec rentx yarn typeorm migration:run",
     "docker:migration-revert": "docker exec rentx yarn typeorm migration:revert",
